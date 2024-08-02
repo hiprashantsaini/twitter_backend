@@ -72,16 +72,6 @@ async function run() {
       res.send(result);
       })
 
-      //patch
-    //   app.patch('/userUpdates/:email', async (req, res) => {
-    //     // const filter = req.params;
-    //     const email=req.body.email;
-    //     const profile = req.body;
-    //     const options = { upsert: true };
-    //     const updateDoc = { $set: profile };
-    //     const result = await userCollection.updateOne({email:email}, updateDoc, options);
-    //     res.send(result)
-    // })
 
     app.patch('/userUpdates/:email', async (req, res) => {
       try {
